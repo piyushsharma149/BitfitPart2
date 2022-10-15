@@ -1,33 +1,37 @@
-# Android Project 2 - *Wishlist*
+# Android Project 5 - *Bitfit*
 
 Submitted by: **Piyush Sharma**
 
-**Wishlist** is a wishlist app that helps the user keep track of what they want to buy.
+**Bitfit** is a health metrics app that allows users to track their daily calorie intake
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [YES] **User can add an item to their wishlist**
-- [YES] **User can see their list of items based on previously inputted items**
-
+- [X] **At least one health metric is tracked (based on user input)**
+  - Chosen metric(s): `Calorie intake`
+- [X] **There is a "create entry" UI that prompts users to make their daily entry**
+- [X] **New entries are saved in a database and then updated in the RecyclerView**
+- [X] **On application restart, previously entered entries are preserved (i.e., are *persistent*)**
+ 
 The following **optional** features are implemented:
 
-- [ ] Wishlist app is 🎨 **customized** 🎨
-- [ ] User can delete an item by long pressing on the item
-- [ ] User can open an item's URL by clicking on the item
+- [ ] **Create a UI for tracking averages and trends in metrics**
+- [ ] **Improve and customize the user interface through styling and coloring**
+- [ ] **Implement orientation responsivity**
+- [ ] **Add a daily photo feature**
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+- [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='Wishlist.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='bitfit.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -38,7 +42,7 @@ GIF created with ...
 
 ## Notes
 
-Had to figure out that you need EditText PLUS TextView in seperate XML files. Apart from that it was fun.
+Had trouble with implementing database but figured it out.
 
 ## License
 
