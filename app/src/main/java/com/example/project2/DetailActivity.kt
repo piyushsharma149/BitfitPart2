@@ -58,7 +58,7 @@ class DetailActivity : AppCompatActivity() {
             val foodlist = Foods(foodstr, caloriestr)
             //list.let{ mylist ->
             lifecycleScope.launch(IO) {
-                (application as ArticleApplication).db.foodDao().deleteAll()
+                //(application as ArticleApplication).db.foodDao().deleteAll()
                 (application as ArticleApplication).db.foodDao().insert(
                     FoodEntity(
                         foodName = foodlist.foodname,
@@ -67,20 +67,7 @@ class DetailActivity : AppCompatActivity() {
                 )
             }
 
-            lifecycleScope.launch {
-                (application as ArticleApplication).db.foodDao().getAll().collect { databaseList ->
-                    databaseList.map { entity ->
-                        DisplayFood(
-                            entity.foodName,
-                            entity.calories
-                        )
-                    }.also { mappedList ->
-                        mylist.clear()
-                        mylist.addAll(mappedList)
-                        adapter.notifyDataSetChanged()
-                    }
-                }
-            }
+
 
             //mylist.add(list)
             foodNameInput.setText("")
@@ -88,7 +75,7 @@ class DetailActivity : AppCompatActivity() {
 
             val i = Intent(this@DetailActivity, MainActivity::class.java)
             //i.putExtra(FOOD_EXTRA, l)
-            //adapter.notifyDataSetChanged()
+            adapter.notifyDataSetChanged()
             startActivity(i)
             //storeInput.setText("")
         }

@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.launch
 
 const val FOOD_EXTRA = "FOOD_EXTRA"
 //var mylist: MutableList<DisplayFood> = ArrayList()
@@ -41,6 +43,20 @@ class MainActivity : AppCompatActivity() {
 
         listsRv.adapter = adapter
         listsRv.layoutManager = LinearLayoutManager(this)
+        lifecycleScope.launch {
+            (application as ArticleApplication).db.foodDao().getAll().collect { databaseList ->
+                databaseList.map { entity ->
+                    DisplayFood(
+                        entity.foodName,
+                        entity.calories
+                    )
+                }.also { mappedList ->
+                    mylist.clear()
+                    mylist.addAll(mappedList)
+                    adapter.notifyDataSetChanged()
+                }
+            }
+        }
 
         addButton.setOnClickListener{
 
