@@ -15,46 +15,57 @@
         tools:layout_editor_absoluteY="1dp" />
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/storeName"
-        android:layout_width="259dp"
-        android:layout_height="73dp"
-        android:autofillHints="Enter Store Name"
-        android:inputType="text"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/price"
-        android:layout_width="111dp"
-        android:layout_height="64dp"
-
-        android:autofillHints="Ex. 5.99"
-        android:inputType="numberDecimal"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
+        android:layout_marginBottom="72dp"
+        android:text="Add New Food"
+        app:layout_constraintBottom_toBottomOf="@+id/listsRv"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/itemName"
-        android:layout_width="147dp"
-        android:layout_height="61dp"
-        android:autofillHints="Enter Item Name"
-        android:inputType="text"
-        android:textSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/storeName"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+    <!--    <Button-->
+<!--        android:id="@+id/submit"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Submit"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/storeName"-->
+<!--        android:layout_width="259dp"-->
+<!--        android:layout_height="73dp"-->
+<!--        android:autofillHints="Enter Store Name"-->
+<!--        android:inputType="text"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/price"-->
+<!--        android:layout_width="111dp"-->
+<!--        android:layout_height="64dp"-->
+
+<!--        android:autofillHints="Ex. 5.99"-->
+<!--        android:inputType="numberDecimal"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/submit"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/itemName"-->
+<!--        android:layout_width="147dp"-->
+<!--        android:layout_height="61dp"-->
+<!--        android:autofillHints="Enter Item Name"-->
+<!--        android:inputType="text"-->
+<!--        android:textSize="40dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/storeName"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
