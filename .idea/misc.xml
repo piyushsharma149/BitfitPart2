@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit - Part 2/app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit - Part 2/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit - Part 2/app/src/main/res/layout/fragment_add_food.xml" value="0.1" />
+        <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit - Part 2/app/src/main/res/layout/fragment_food_list.xml" value="0.2" />
+        <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit - Part 2/app/src/main/res/layout/list_item.xml" value="0.20572916666666666" />
+        <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit - Part 2/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1" />
         <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit/app/src/main/res/layout/activity_detail.xml" value="0.182518115942029" />
         <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit/app/src/main/res/layout/activity_main.xml" value="0.182518115942029" />
         <entry key="..\:/Piyush Sharma/AndroidStudioProjects/Bitfit/app/src/main/res/layout/list_item.xml" value="0.4" />

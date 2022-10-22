@@ -10,6 +10,9 @@ interface FoodDao {
     @Query("SELECT * FROM food_table")
     fun getAll(): Flow<List<FoodEntity>>
 
+    @Query("SELECT AVG(calories) FROM food_table")
+    fun getAverage(): Int
+
     @Insert
     fun insert(food: FoodEntity)
 
